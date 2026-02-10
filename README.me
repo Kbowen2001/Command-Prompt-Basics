@@ -9,7 +9,7 @@ Open PowerShell:
 4. cd desktop/folder name to open a specific folder
 
 TO CREATE A FOLDER
-1. Go to the place you want the folder: cd path\to\your\location (cd desktop)
+1. Go to the place you want the folder: cd path\to\your\location (cd desktop/filename)
 2. Create the folder: mkdir NewFolderName
 
 TO CREATE A FOLDER WITHIN A FOLDER
@@ -18,11 +18,12 @@ TO CREATE A FOLDER WITHIN A FOLDER
 
 TO ADD A FILE TO A FOLDER
 1. Go to the folder: cd FolderName
-2. Create a file: New-Item -Name "file.txt" -ItemType "File" (New-Item index.html)
+2. Create a file: New-Item index.html
 
 
 ------------------------------------
-
+To delete a file:
+del myfile.txt
 
 🧹 To delete a folder and everything inside:
 cmd
@@ -73,10 +74,10 @@ cd "My Folder"
 
 
 Step by step practice (Windows PowerShell):
-1. Open a terminal window (Windows PowerShell).
-2. Change to the Sites directory: cd .\Sites
-3. Delete the style.css file: Remove-Item .\style.css
-4. List the folder to confirm: Get-ChildItem
+1. Open a terminal window (Windows PowerShell). 
+2. Change to the Sites directory:                   cd desktop/filename
+3. Delete the style.css file:                      del .\style.css
+4. List the folder to confirm: Get-ChildItem 
 5. Go up one directory: cd ..
 6. Try deleting Sites without force: Remove-Item .\Sites
 7. Delete Sites with force: Remove-Item .\Sites -Recurse -Force
