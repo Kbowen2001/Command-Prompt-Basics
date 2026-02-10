@@ -93,7 +93,7 @@ function showScore() {
   resultElement.classList.remove('hide')
   if (wrongCount > 0) {
     setTimeout(() => {
-      alert('Do dirty things to me baby 😘')
+      alert('WRONG')
     }, 0)
   }
   startButton.innerText = 'Restart'
@@ -119,7 +119,7 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'Do you like me?',
+    question: 'Are you sad?',
     answers: [
       { text: 'Yes', correct: true },
       { text: 'No', correct: false }
@@ -127,7 +127,7 @@ const questions = [
   },
   
   {
-    question: 'Do I like you?',
+    question: 'Are you happy?',
     answers: [
       { text: 'Yes', correct: true },
       { text: 'No', correct: false },
@@ -143,7 +143,7 @@ const questions = [
   },
 
   {
-    question: 'Are you going to cuddle me?',
+    question: 'Do you like cats?',
     answers: [
       { text: 'NO!', correct: false },
       { text: 'Yes of course', correct: true }
@@ -151,7 +151,7 @@ const questions = [
   },
 
     {
-    question: 'Do you love Nala?',
+    question: 'Do you like dogs',
     answers: [
       { text: 'Nah', correct: false },
       { text: 'With all my heart', correct: true }
@@ -159,7 +159,7 @@ const questions = [
   },
 
     {
-    question: 'Are you gonna kiss me?',
+    question: 'Are you gonna nap today?',
     answers: [
       { text: 'I would rather not', correct: false },
       { text: 'Always', correct: true }
@@ -170,7 +170,7 @@ const questions = [
     question: 'Will you send me money?',
     answers: [
       { text: 'NO!', correct: true },
-      { text: 'Whatever you want baby', correct: false }
+      { text: 'Yes', correct: false }
     ]
   }
 ]
