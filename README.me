@@ -1,23 +1,28 @@
-Command Promt Step By Step
 
+
+Command Prompt Step By Step
+
+Open PowerShell:
+1. Press the Windows key.
+2. Type PowerShell and press Enter.
 
 TO CREATE A FOLDER
-1.
-2.
+1. Go to the place you want the folder: cd path\to\your\location (cd desktop)
+2. Create the folder: mkdir NewFolderName
 
 TO CREATE A FOLDER WITHIN A FOLDER
-1.
-2.
+1. Go into the parent folder: cd ParentFolder
+2. Create the subfolder: mkdir ChildFolder
 
 TO ADD A FILE TO A FOLDER
-1.
-2.
+1. Go to the folder: cd FolderName
+2. Create a file: New-Item -Name "file.txt" -ItemType "File" (New-Item index.html)
 
 TO DELETE A FILE FROM A FOLDER
-1.
-2.
+1. Go to the folder: cd FolderName 
+2. Delete the file: Remove-Item "file.txt" (Remove-Item index.html)
 
 TO DELETE A FOLDER
-1.
-2.
+1. Go to the parent folder: cd ParentFolder
+2. Delete the folder (and everything inside): Remove-Item "FolderName" -Recurse
 
