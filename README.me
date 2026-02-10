@@ -5,6 +5,8 @@ Command Prompt Step By Step
 Open PowerShell:
 1. Press the Windows key.
 2. Type PowerShell and press Enter.
+3. Type cd to see where you are 
+4. cd desktop/folder name to open a specific folder
 
 TO CREATE A FOLDER
 1. Go to the place you want the folder: cd path\to\your\location (cd desktop)
@@ -67,3 +69,16 @@ cd foldername
 📁 Path with spaces:
 bash
 cd "My Folder"
+
+
+
+Step by step practice (Windows PowerShell):
+1. Open a terminal window (Windows PowerShell).
+2. Change to the Sites directory: cd .\Sites
+3. Delete the style.css file: Remove-Item .\style.css
+4. List the folder to confirm: Get-ChildItem
+5. Go up one directory: cd ..
+6. Try deleting Sites without force: Remove-Item .\Sites
+7. Delete Sites with force: Remove-Item .\Sites -Recurse -Force
+8. List the folder to confirm: Get-ChildItem
+9. List running processes: Get-Process
